@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Dirija Seguro</title>
 </head>
+
 <body>
   <main>
     <nav>
@@ -23,79 +26,94 @@
       </div>
     </div>
 
-    <div class="formulario">   
+    <div class="formulario">
       <h2>Receba o seu e-book:</h2>
-      <form method="POST" action="https://smtl.gama.academy/leads/db22dd70-915e-11ea-9e98-2f3c29e0891c">
-        
+      <form id="formulario">
+
         <div class="">
           <div class="form-group">
             <label for="name">Nome Completo:</label>
-            <input class="form-control" id="name" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Nome Completo"  placeholder="Nome Completo" required />
+            <input class="form-control" id="name" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
+              title="Nome Completo" placeholder="Nome Completo" required />
           </div>
         </div>
         <div class="">
           <div class="form-group">
             <label for="idade">Email:</label>
-            <input class="form-control" id="email" name="email" type="email" placeholder="E-mail"  required />
+            <input class="form-control" id="email" name="email" type="email" placeholder="E-mail" required />
           </div>
         </div>
         <div class="">
           <div class="form-group">
             <label for="idade">Cidade:</label>
-            <input class="form-control" id="cidade" name="cidade" type="text" placeholder="Cidade"  />
+            <input class="form-control" id="cidade" name="cidade" type="text" placeholder="Cidade" />
           </div>
         </div>
         <div class="form-group ">
           <label for="motorista">É motorista de app:</label>
-            <select id="inputState" class="form-control" id="app">
-              <option selected>Escolha...</option>
-              <option>Sim</option>
-              <option>Não</option>
-            </select>
+          <select id="inputState" class="form-control" id="app">
+            <option value="nada" selected>Escolha...</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+            <option value="mas">Não, mas pretendo ser!</option>
+          </select>
         </div>
-  
-        <input name="redirectTo" type="hidden" value="https://dirijaseguro.com.br/thankyou.html"/>
-        <!-- <input name="debugMode" type="hidden" value="true" /> -->
-        <input class="btn" type="submit" value="BAIXAR GRATUITAMENTE"/>
+
+        <!-- <input name="redirectTo" type="hidden" value="https://dirijaseguro.com.br/thankyou.html" />
+        <input name="debugMode" type="hidden" value="true" /> -->
+        <input class="btn" type="submit" value="BAIXAR GRATUITAMENTE" />
+
       </form>
-    </div> 
+    </div>
     <!-- fim div form -->
 
 
     <div class="cards-small">
       <p class="txt-p-bottom">E mais:</p>
       <div class="row">
-          <div class="card-space">
-            <img src="img/askIcon.png" class="card-img  mb-3" alt="icone de dúvidas">
-            <div class=""><p class="card-text">Tire suas dúvidas! Como: em dias de chuva/frio, devo deixar o vidro aberto ou fechado?</p>
-            </div>
+        <div class="card-space">
+          <img src="img/askIcon.png" class="card-img  mb-3" alt="icone de dúvidas">
+          <div class="">
+            <p class="card-text">Tire suas dúvidas! Como: em dias de chuva/frio, devo deixar o vidro aberto ou fechado?
+            </p>
           </div>
-          <div class="card-space">
-            <img src="img/checkIcon.png" class="card-img mb-3" alt="icone de lista">
-            <div class="">
-              <p class="card-text">Mostre ao seu passageiro que você se preocupa com a saúde dele: imprima um check list de cuidados para dispor no seu carro</p>
-            </div>
+        </div>
+        <div class="card-space">
+          <img src="img/checkIcon.png" class="card-img mb-3" alt="icone de lista">
+          <div class="">
+            <p class="card-text">Mostre ao seu passageiro que você se preocupa com a saúde dele: imprima um check list
+              de cuidados para dispor no seu carro</p>
           </div>
-          <div class="card-space">
-            <img src="img/safeCarIcon.png" class="card-img  mb-3" alt="icone de segurança">
-            <div class="">
-              <p class="card-text">Esteja informado sobre como manter seu carro seguro para o seu cliente</p>
-            </div>
+        </div>
+        <div class="card-space">
+          <img src="img/safeCarIcon.png" class="card-img  mb-3" alt="icone de segurança">
+          <div class="">
+            <p class="card-text">Esteja informado sobre como manter seu carro seguro para o seu cliente</p>
           </div>
+        </div>
       </div>
     </div>
 
   </main>
 
   <footer class="footer text-center">
-      <div class="redes-sociais">
-        <ul class="">
-          <li><a href="https://www.facebook.com/Dirija-Seguro-103812198005570"> <img src="img/fb-logo.png" alt="logo facebook"></a></li>
-          <li><a href="https://www.instagram.com/campanhadirijaseguro/"> <img src="img/ig-logo.png" alt="logo instagram"> </a></li>
-        </ul> 
-        <span> © 2020 - Dirija Seguro</span>
-      </div>
+    <div class="redes-sociais">
+      <ul class="">
+        <li><a href="https://www.facebook.com/Dirija-Seguro-103812198005570"> <img src="img/fb-logo.png"
+              alt="logo facebook"></a></li>
+        <li><a href="https://www.instagram.com/campanhadirijaseguro/"> <img src="img/ig-logo.png" alt="logo instagram">
+          </a></li>
+      </ul>
+      <span> © 2020 - Dirija Seguro</span>
+    </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
+
+  <script src="js/codigo.js"></script>
+
 </body>
 
 </html>

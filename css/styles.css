@@ -14,7 +14,7 @@ body {
 .background-img {
   height: 40vh;
   width: 100vw;
-  background-image: url('/img/motorista-img.png');
+  background-image: url('../img/motorista-img.png');
   background-size: cover;
 
 }
